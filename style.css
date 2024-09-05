@@ -1,17 +1,17 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Drawer modalning asosiy stili */
+ //Drawer modalning asosiy stili 
 .drawer {
     height: 100%;
     width: 0;
     position: fixed;
     top: 0;
-    right: 0; /* O‘ng tomondan chiqadi */
+    right: 0; /* O‘ng tomondan chiqadi 
     background-color: #111;
     overflow-x: hidden;
     transition: 0.3s;
@@ -20,6 +20,46 @@ body {
 
 .drawer-content {
     color: white;
+    margin: 20px;
+}
+
+ //Drawer ochilganda kengligi 
+.drawer.open {
+    width: 250px;
+}
+
+ //Drawer yopish tugmasi 
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    cursor: pointer;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    container: 1200px;
+}
+
+/* Drawer modalning asosiy stili */
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0; /* O‘ng tomondan chiqadi */
+    background-color: #3a2b2b;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.drawer-content {
+    color: rgb(139, 137, 137);
     margin: 20px;
 }
 
@@ -32,7 +72,26 @@ body {
 .close {
     position: absolute;
     top: 10px;
-    right: 20px;
+    left: 20px;
     font-size: 36px;
     cursor: pointer;
+    margin-right: 0;
+}
+.drawe__buton {
+    display: flex;
+    justify-content: right;
+}
+
+.open_dr {
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(50, 79, 108);
+    transition: 0.3s all ease;
+}
+
+.open_dr:hover {
+    background-color: #3a2b2b;
 }
